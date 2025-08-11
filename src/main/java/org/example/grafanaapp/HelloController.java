@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @GetMapping("/hello")
     public String hello() {
-        log.info("✅ /hello endpoint called");
+        log.info("INFO LOG");
+        log.error("ERROR LOG");
+        log.warn("WARN LOG");
         return "Hello from Spring Boot!";
     }
 }
